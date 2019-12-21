@@ -1,10 +1,7 @@
-class Array
-  def my_each
-    idx = 0
-    while idx < length
-      yield self[idx]
-      idx += 1
-    end
-    self
+def my_each(collection)
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i = i + 1
   end
-end
+  collection
